@@ -1,0 +1,261 @@
+[{'abstract': 'We define a categorical notion of cybernetic system as a '
+              'dynamical\n'
+              'realisation of a generalized open game, along with a coherence '
+              'condition. We\n'
+              'show that this notion captures a wide class of cybernetic '
+              'systems in\n'
+              'computational neuroscience and statistical machine learning, '
+              'exposes their\n'
+              'compositional structure, and gives an abstract justification '
+              'for the\n'
+              'bidirectional structure empirically observed in cortical '
+              'circuits. Our\n'
+              'construction is built on the observation that Bayesian updates '
+              'compose\n'
+              'optically, a fact which we prove along the way, via a fibred '
+              'category of\n'
+              'state-dependent stochastic channels.',
+  'authors': [{'name': 'Toby St Clere Smithe', 'number_on_paper': 1}],
+  'doi': '10.4204/EPTCS.333.8',
+  'journal': 'EPTCS 333, 2021, pp. 108-124',
+  'title': 'Cyber Kittens, or Some First Steps Towards Categorical '
+           'Cybernetics'},
+ {'abstract': 'In the dawn of computer science and the eve of neuroscience we '
+              'participate in\n'
+              'rebirth of neuroscience due to new technology that allows us to '
+              'deeply and\n'
+              'precisely explore whole new world that dwells in our brains.',
+  'authors': [{'name': 'Boris Tomas', 'number_on_paper': 1}],
+  'journal': 'IJCSIS Volume 12 No. 3 2014',
+  'title': 'Cortex simulation system proposal using distributed computer '
+           'network\n'
+           '  environments'},
+ {'abstract': 'This paper introduces several fundamental concepts in '
+              'information theory from\n'
+              'the perspective of their origins in engineering. Understanding '
+              'such concepts is\n'
+              'important in neuroscience for two reasons. Simply applying '
+              'formulae from\n'
+              'information theory without understanding the assumptions behind '
+              'their\n'
+              'definitions can lead to erroneous results and conclusions. '
+              'Furthermore, this\n'
+              'century will see a convergence of information theory and '
+              'neuroscience;\n'
+              'information theory will expand its foundations to incorporate '
+              'more\n'
+              'comprehensively biological processes thereby helping reveal how '
+              'neuronal\n'
+              'networks achieve their remarkable information processing '
+              'abilities.',
+  'authors': [{'name': 'Mark D. McDonnell', 'number_on_paper': 1},
+              {'name': 'Shiro Ikeda', 'number_on_paper': 2},
+              {'name': 'Jonathan H. Manton', 'number_on_paper': 3}],
+  'doi': '10.1007/s00422-011-0451-9',
+  'journal': 'Biological Cybernetics, 105(1), 1-16, 2011',
+  'title': 'An Introductory Review of Information Theory in the Context of\n'
+           '  Computational Neuroscience'},
+ {'abstract': 'Functional optical imaging in neuroscience is rapidly growing '
+              'with the\n'
+              'development of new optical systems and fluorescence indicators. '
+              'To realize the\n'
+              'potential of these massive spatiotemporal datasets for relating '
+              'neuronal\n'
+              'activity to behavior and stimuli and uncovering local circuits '
+              'in the brain,\n'
+              'accurate automated processing is increasingly essential. In '
+              'this review, we\n'
+              'cover recent computational developments in the full data '
+              'processing pipeline of\n'
+              'functional optical microscopy for neuroscience data and discuss '
+              'ongoing and\n'
+              'emerging challenges.',
+  'authors': [{'name': 'Hadas Benisty', 'number_on_paper': 1},
+              {'name': 'Alexander Song', 'number_on_paper': 2},
+              {'name': 'Gal Mishne', 'number_on_paper': 3},
+              {'name': 'Adam S. Charles', 'number_on_paper': 4}],
+  'journal': '',
+  'title': 'Data Processing of Functional Optical Microscopy for Neuroscience'},
+ {'abstract': '{\\it Caenorhabditis elegans} nematode worms are the only '
+              'animals with the\n'
+              'known detailed neural connectivity diagram, well characterized '
+              'genomics, and\n'
+              'relatively simple quantifiable behavioral output. With this in '
+              'mind, many\n'
+              'researchers view this animal as the best candidate for a '
+              'systems biology\n'
+              'approach, where one can integrate molecular and cellular '
+              'knowledge to gain\n'
+              "global understanding of worm's behavior. This work reviews some "
+              'research in\n'
+              'this direction, emphasizing computational perspective, and '
+              'points out some\n'
+              'successes and challenges to meet this lofty goal.',
+  'authors': [{'name': 'Jan Karbowski', 'number_on_paper': 1}],
+  'doi': '10.1016/j.coisb.2018.09.008',
+  'journal': 'Current Opinion in Systems Biology 13: 44-51 (2019)',
+  'title': 'Deciphering neural circuits for Caenorhabditis elegans behavior '
+           'by\n'
+           '  computations and perturbations to genome and connectome'},
+ {'abstract': 'Although a number of studies have explored deep learning in '
+              'neuroscience, the\n'
+              'application of these algorithms to neural systems on a '
+              'microscopic scale, i.e.\n'
+              'parameters relevant to lower scales of organization, remains '
+              'relatively novel.\n'
+              'Motivated by advances in whole-brain imaging, we examined the '
+              'performance of\n'
+              'deep learning models on microscopic neural dynamics and '
+              'resulting emergent\n'
+              'behaviors using calcium imaging data from the nematode C. '
+              'elegans. We show that\n'
+              'neural networks perform remarkably well on both neuron-level '
+              'dynamics\n'
+              'prediction, and behavioral state classification. In addition, '
+              'we compared the\n'
+              'performance of structure agnostic neural networks and graph '
+              'neural networks to\n'
+              'investigate if graph structure can be exploited as a favorable '
+              'inductive bias.\n'
+              'To perform this experiment, we designed a graph neural network '
+              'which explicitly\n'
+              'infers relations between neurons from neural activity and '
+              'leverages the\n'
+              'inferred graph structure during computations. In our '
+              'experiments, we found that\n'
+              'graph neural networks generally outperformed structure agnostic '
+              'models and\n'
+              'excel in generalization on unseen organisms, implying a '
+              'potential path to\n'
+              'generalizable machine learning in neuroscience.',
+  'authors': [{'name': 'Paul Y. Wang', 'number_on_paper': 1},
+              {'name': 'Sandalika Sapra', 'number_on_paper': 2},
+              {'name': 'Vivek Kurien George', 'number_on_paper': 3},
+              {'name': 'Gabriel A. Silva', 'number_on_paper': 4}],
+  'journal': '',
+  'title': 'Generalizable Machine Learning in Neuroscience using Graph Neural\n'
+           '  Networks'},
+ {'abstract': 'Neural network models can now recognise images, understand '
+              'text, translate\n'
+              'languages, and play many human games at human or superhuman '
+              'levels. These\n'
+              'systems are highly abstracted, but are inspired by biological '
+              'brains and use\n'
+              'only biologically plausible computations. In the coming years, '
+              'neural networks\n'
+              'are likely to become less reliant on learning from massive '
+              'labelled datasets,\n'
+              'and more robust and generalisable in their task performance. '
+              'From their\n'
+              'successes and failures, we can learn about the computational '
+              'requirements of\n'
+              'the different tasks at which brains excel. Deep learning also '
+              'provides the\n'
+              'tools for testing cognitive theories. In order to test a '
+              'theory, we need to\n'
+              'realise the proposed information-processing system at scale, so '
+              'as to be able\n'
+              'to assess its feasibility and emergent behaviours. Deep '
+              'learning allows us to\n'
+              'scale up from principles and circuit models to end-to-end '
+              'trainable models\n'
+              'capable of performing complex tasks. There are many levels at '
+              'which cognitive\n'
+              'neuroscientists can use deep learning in their work, from '
+              'inspiring theories to\n'
+              'serving as full computational models. Ongoing advances in deep '
+              'learning bring\n'
+              'us closer to understanding how cognition and perception may be '
+              'implemented in\n'
+              'the brain -- the grand challenge at the core of cognitive '
+              'neuroscience.',
+  'authors': [{'name': 'Katherine R. Storrs', 'number_on_paper': 1},
+              {'name': 'Nikolaus Kriegeskorte', 'number_on_paper': 2}],
+  'journal': '',
+  'title': 'Deep Learning for Cognitive Neuroscience'},
+ {'abstract': 'Unlike the brain, artificial neural networks, including '
+              'state-of-the-art deep\n'
+              'neural networks for computer vision, are subject to '
+              '"catastrophic forgetting":\n'
+              'they rapidly forget the previous task when trained on a new '
+              'one. Neuroscience\n'
+              'suggests that biological synapses avoid this issue through the '
+              'process of\n'
+              'synaptic consolidation and metaplasticity: the plasticity '
+              'itself changes upon\n'
+              'repeated synaptic events. In this work, we show that this '
+              'concept of\n'
+              'metaplasticity can be transferred to a particular type of deep '
+              'neural networks,\n'
+              'binarized neural networks, to reduce catastrophic forgetting.',
+  'authors': [{'name': 'Axel Laborieux', 'number_on_paper': 1},
+              {'name': 'Maxence Ernoult', 'number_on_paper': 2},
+              {'name': 'Tifenn Hirtzlin', 'number_on_paper': 3},
+              {'name': 'Damien Querlioz', 'number_on_paper': 4}],
+  'doi': '10.1038/s41467-021-22768-y',
+  'journal': 'Computational and Systems Neuroscience (Cosyne) 2021',
+  'title': 'Synaptic metaplasticity in binarized neural networks'},
+ {'abstract': 'A major challenge in both neuroscience and machine learning is '
+              'the\n'
+              'development of useful tools for understanding complex '
+              'information processing\n'
+              'systems. One such tool is probes, i.e., supervised models that '
+              'relate features\n'
+              'of interest to activation patterns arising in biological or '
+              'artificial neural\n'
+              'networks. Neuroscience has paved the way in using such models '
+              'through numerous\n'
+              'studies conducted in recent decades. In this work, we draw '
+              'insights from\n'
+              'neuroscience to help guide probing research in machine '
+              'learning. We highlight\n'
+              'two important design choices for probes $-$ direction and '
+              'expressivity $-$ and\n'
+              'relate these choices to research goals. We argue that specific '
+              'research goals\n'
+              'play a paramount role when designing a probe and encourage '
+              'future probing\n'
+              'studies to be explicit in stating these goals.',
+  'authors': [{'name': 'Anna A. Ivanova', 'number_on_paper': 1},
+              {'name': 'John Hewitt', 'number_on_paper': 2},
+              {'name': 'Noga Zaslavsky', 'number_on_paper': 3}],
+  'journal': '',
+  'title': 'Probing artificial neural networks: insights from neuroscience'},
+ {'abstract': 'Information theory is a practical and theoretical framework '
+              'developed for the\n'
+              'study of communication over noisy channels. Its probabilistic '
+              'basis and\n'
+              'capacity to relate statistical structure to function make it '
+              'ideally suited for\n'
+              'studying information flow in the nervous system. As a framework '
+              'it has a number\n'
+              'of useful properties: it provides a general measure sensitive '
+              'to any\n'
+              'relationship, not only linear effects; its quantities have '
+              'meaningful units\n'
+              'which in many cases allow direct comparison between different '
+              'experiments; and\n'
+              'it can be used to study how much information can be gained by '
+              'observing neural\n'
+              'responses in single experimental trials, rather than in '
+              'averages over multiple\n'
+              'trials. A variety of information theoretic quantities are in '
+              'common use in\n'
+              'neuroscience - including the Shannon entropy, Kullback-Leibler '
+              'divergence, and\n'
+              'mutual information. In this entry, we introduce and define '
+              'these quantities.\n'
+              'Further details on how these quantities can be estimated in '
+              'practice are\n'
+              'provided in the entry "Estimation of Information-Theoretic '
+              'Quantities" and\n'
+              'examples of application of these techniques in neuroscience can '
+              'be found in the\n'
+              'entry "Applications of Information-Theoretic Quantities in '
+              'Neuroscience".',
+  'authors': [{'name': 'Robin A. A. Ince', 'number_on_paper': 1},
+              {'name': 'Stefano Panzeri', 'number_on_paper': 2},
+              {'name': 'Simon R. Schultz', 'number_on_paper': 3}],
+  'doi': '10.1007/978-1-4614-7320-6_306-1',
+  'journal': 'Encyclopaedia of Computational Neuroscience 2014, pp 1-6',
+  'title': 'Summary of Information Theoretic Quantities'}]
