@@ -1,72 +1,69 @@
-
-
 import json
 from urllib.request import urlopen
 
-base_url = 'https://api.biorxiv.org/details/biorxiv/'
-date_range = '2018-01-01/2022-06-01/'
+base_url = "https://api.biorxiv.org/details/biorxiv/"
+date_range = "2015-01-01/2022-06-01/"
 alldata = []
 
-def helper (data_json):
-    for x in data_json['collection']:
-        if (x['category'] != 'neuroscience'):
+# Get batches of publication data
+# Each batch contains 100 manuscripts
+def main(batches):
+    for i in range(0, batches):
+        cursor = str(100 * i + 1)
+        url = base_url + date_range + cursor
+        response = urlopen(url)
+
+        # storing the JSON response from url in data_json
+        data_json = json.loads(response.read())
+        parse(data_json)
+    # writing the result to json
+    with open("test.json", "w") as f:
+        json.dump(alldata, f)
+
+
+def parse(data_json):
+    for manuscript in data_json["collection"]:
+        if manuscript["category"] != "neuroscience":
             continue
         try:
-            title = x['title']
+            title = manuscript["title"]
         except:
-            title = ''
+            title = ""
         try:
-            abstract = x['abstract']
-        except: 
-            abstract = ''
-        try: 
-            doi = x['doi']
+            abstract = manuscript["abstract"]
         except:
-            doi = ''
+            abstract = ""
         try:
-            authors = x['authors']
+            doi = manuscript["doi"]
         except:
-            authors = ''
+            doi = ""
         try:
-            institution = x['author_corresponding_institution']
+            authors = manuscript["authors"]
         except:
-            institution = ''
-        #slicing authors into a list
-        author_list = authors.split(';')
+            authors = ""
+        try:
+            institution = manuscript["author_corresponding_institution"]
+        except:
+            institution = ""
+        # slicing authors into a list
+        author_list = authors.split(";")
         author_dict = []
         for i, author in enumerate(author_list):
-            a_dict = {
-                'author': author,
-                'number on Paper': i+1,
-                'institution': institution
+            authors = {
+                "author": author,
+                "number on Paper": i + 1,
+                "institution": institution,
             }
-            author_dict.append(a_dict)
-            
-        all_dict = {
-            'title': title,
-            'abstract': abstract,
-            'doi': doi,
-            'authors': author_dict,
-            'source': 'bioarxiv',
+            author_dict.append(authors)
+
+        single_manuscript_data = {
+            "title": title,
+            "abstract": abstract,
+            "doi": doi,
+            "authors": author_dict,
+            "source": "bioarxiv",
         }
-        alldata.append(all_dict)
-    
-
-#print(json.dumps(alldata, indent = 4))
-    
-for i in range(0, 200):
-    cursor = str(100*i+1)
-    url = base_url + date_range + cursor
-    response = urlopen(url)
-  
-#storing the JSON response 
-#from url in data_json
-    data_json = json.loads(response.read())
-    helper(data_json)
+        alldata.append(single_manuscript_data)
 
 
-print(len(alldata))
-with open('bioarxiv_parsed.json', 'w') as f:
-    json.dump(alldata, f)
-    
-
+main(5)
