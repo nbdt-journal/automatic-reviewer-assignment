@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative h-screen bg-gradient-to-b from-pink-900/10 to-[#a7dcf5] lg:h-[140vh]">
       <Head>
-        <title>Create Next App</title>
+        <title>automatic-reviewer-assignment</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
@@ -34,5 +34,6 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
 
 export default Home
