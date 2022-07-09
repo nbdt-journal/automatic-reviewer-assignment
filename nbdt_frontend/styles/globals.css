@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#fffdfd] text-black ;
+    @apply bg-[#ffffff] text-black ;
   }
 
   header {
@@ -16,7 +16,7 @@
 
 @layer components {
   .headerLink {
-    @apply cursor-pointer text-sm font-bold text-[#18A0FB] transition duration-[.4s] hover:text-[#b3b3b3];
+    @apply cursor-pointer text-sm font-bold text-[#18A0FB] transition duration-[.4s] hover:text-[#e11ba2];
   }
 
 }

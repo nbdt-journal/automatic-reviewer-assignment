@@ -2,15 +2,23 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
-
+import Row from '../components/Row'
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="relative h-screen bg-gradient-to-b from-pink-900/10 to-[#a7dcf5] lg:h-[140vh]">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
+      <main>
+        <section>
+        <Row/> 
+        </section>
+
+      </main>
+      
+        
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
         <a
@@ -19,8 +27,8 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <Image src="/nbdt-gsoc-pic.png" alt="Vercel Logo" width={81} height={45} />
+          NBDT x GSoC {' '}
+          <Image src="/nbdt-gsoc-pic-removebg.png" alt="Vercel Logo" width={81} height={45} />
         </a>
       </footer>
     </div>
