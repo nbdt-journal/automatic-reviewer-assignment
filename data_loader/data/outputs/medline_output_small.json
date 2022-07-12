@@ -1,0 +1,46 @@
+[{'abstract': 'The shortening of hospital stays implies rethinking the pre- '
+              'and post-operative management of lower limb arthroplasty. '
+              'Optimal preparation of the patient and anticipation of the '
+              'postoperative process are necessary to limit the length of stay '
+              'and ensure quality, safety and patient satisfaction. This '
+              'article summarises what is known about preoperative '
+              'information, education and rehabilitation for primary care '
+              'physicians. Physical rehabilitation is not recommended in '
+              'isolation. However, patient-centred information and education '
+              'is recommended for those at risk of complicated postoperative '
+              'outcomes. Interdisciplinary collaboration is needed to '
+              'coordinate the whole process effectively in a context of '
+              'shortened lengths of stay.',
+  'authors': [{'affiliation': ['A'], 'name': 'Robin Philippossian'},
+              {'affiliation': ['B',
+                               "Service de réadaptation de l'appareil "
+                               'locomoteur, Clinique romande de réadaptation, '
+                               '1950 Sion.'],
+               'name': 'François Luthi'},
+              {'affiliation': ['C', 'D'], 'name': 'Claude Pichonnaz'}],
+  'journal': 'Revue medicale suisse',
+  'pmid': '34878744',
+  'title': '[Preoperative rehabilitation before lower limb arthroplasty : '
+           'Knowledge and perspectives].'},
+ {'abstract': '',
+  'authors': [{'affiliation': ['Service de médecine interne, Hôpital de la '
+                               'Tour, 1217 Meyrin/Genève.'],
+               'name': 'Adriana Graenicher'},
+              {'affiliation': ['Service de médecine interne, Hôpital de la '
+                               'Tour, 1217 Meyrin/Genève.',
+                               'IIIT Hyderabad lol',
+                               'UPenn lol'],
+               'name': 'Samuel Teicher'},
+              {'affiliation': ['Service de médecine interne, Hôpital de la '
+                               'Tour, 1217 Meyrin/Genève.'],
+               'name': 'Omar Kherad'}],
+  'journal': 'Revue medicale suisse',
+  'pmid': '34878745',
+  'title': ''},
+ {'abstract': '',
+  'authors': [{'affiliation': ['Service de médecine interne et de réadaptation '
+                               'de Beau-Séjour, HUG, 1211 Genève 14.'],
+               'name': 'Christophe Luthy'}],
+  'journal': 'Revue medicale suisse',
+  'pmid': '34878746',
+  'title': ''}]

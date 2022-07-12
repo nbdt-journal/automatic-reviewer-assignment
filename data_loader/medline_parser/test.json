@@ -1,0 +1,3 @@
+this is the esearch command:
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=computational+neuroscience&usehistory=y&rettype=json
+
