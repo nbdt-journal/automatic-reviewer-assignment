@@ -3,7 +3,7 @@ import urllib.request
 from time import sleep
 from medline_parser.utils.get_search_data import *
 from medline_parser.utils.parse_medline_json import *
-
+import os
 all_abstracts = list()
 
 def eutility_automator(all_abstracts: list,
@@ -35,10 +35,13 @@ def eutility_automator(all_abstracts: list,
         fetch_url = base_url+fetch_eutil+db+fetch_querykey+fetch_webenv+fetch_retstart+fetch_retmax+fetch_retmode+fetch_rettype
         f = urllib.request.urlopen (fetch_url)
         fetch_data = f.read().decode('utf-8')
-        with open("fetch_data.xml", "w") as f:
+        with open("./data/intermediates/fetch_data.xml", "w") as f:
             f.write(fetch_data)
         abstracts = parse_medline_json("fetch_data.xml")
         if abstracts:
             all_abstracts.extend(abstracts)
         sleep(2)
         retstart = retstart + retmax
+    
+    # delete the fetch_data file
+    os.remove("./data/intermediates/fetch_data.xml")
