@@ -37,7 +37,6 @@ arxiv_parser(
     start=arxiv_start
     )
 
-print(str(len(full_data)) + " Entries have been returned.")
 
 eutility_automator(
     all_abstracts=full_data,
@@ -46,7 +45,7 @@ eutility_automator(
     total_abstract_count=medline_max_results
     )
 
-print(len(full_data))
+print(str(len(full_data)) + " Entries have been returned.")
 
 with open('test.json', 'w') as f:
     json.dump(full_data, f)

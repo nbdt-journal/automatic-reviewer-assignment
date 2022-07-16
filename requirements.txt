@@ -1,0 +1,7 @@
+feedparser==6.0.10
+lxml==4.9.0
+numpy==1.20.0
+PyYAML==6.0
+requests==2.23.0
+setuptools==62.3.2
+six==1.15.0
