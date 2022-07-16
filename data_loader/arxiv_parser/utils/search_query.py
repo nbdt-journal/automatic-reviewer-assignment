@@ -1,7 +1,3 @@
-import urllib.request
-from pprint import pprint
-import feedparser
-# keywords dict
 def generate_keywords_dict(path):
     """
     Params: keywords: list of strings for the keywords.
@@ -43,7 +39,6 @@ def generate_search_query(start, max_results, path):
     search_query = 'all:'
 
     flag = 0
-    # print(search_dict["keywords"])
     for keyword in search_dict["keywords"]:
         search_query += keyword + '+OR'
         flag = 1

@@ -1,0 +1,15 @@
+---
+destination_path: ''
+params:
+  bioarxiv:
+    paging: 10
+    batches: 5
+    parse: true
+  arxiv:
+    start: 0
+    max_results: 10
+    parse: true
+  medline:
+    max_results: 10
+    start: 0
+    parse: true
