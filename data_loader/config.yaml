@@ -1,15 +1,15 @@
 ---
-destination_path: ''
+destination_path: './data/outputs/main_output.json'
 params:
   bioarxiv:
-    paging: 10
-    batches: 5
+    paging: 2
+    batches: 3
     parse: true
   arxiv:
     start: 0
-    max_results: 10
+    max_results: 3
     parse: true
   medline:
-    max_results: 10
+    max_results: 3
     start: 0
     parse: true

@@ -6,7 +6,7 @@ import yaml
 
 with open('config.yaml') as f:
     config = yaml.safe_load(f)
-
+destination_path = config['destination_path']
 bioarxiv_batches = config["params"]["bioarxiv"]["batches"]
 bioarxiv_paging = config["params"]["bioarxiv"]["paging"]
 bioarxiv_parse = config["params"]["bioarxiv"]["parse"]
@@ -16,9 +16,8 @@ arxiv_parse = config["params"]["arxiv"]["parse"]
 medline_parse = config["params"]["medline"]["parse"]
 medline_start = config["params"]["medline"]["start"]
 medline_max_results = config["params"]["medline"]["max_results"]
-
+data_path = "./data/search_data"
 full_data = []
-data_path='./data/search_data'
 
 print('Parsing bioarxiv data...')
 
@@ -47,5 +46,5 @@ eutility_automator(
 
 print(str(len(full_data)) + " Entries have been returned.")
 
-with open('test.json', 'w') as f:
+with open(destination_path, 'w') as f:
     json.dump(full_data, f)
