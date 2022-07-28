@@ -1,8 +1,19 @@
-import medline_parser.pubmed_parser.pubmed_parser.medline_parser as pp
+import parsers.medline_parser.pubmed_parser.pubmed_parser.medline_parser as pp
 
+def parse_medline_json(xml_path):
+    """
+    Parses the unprocessed XML response into the JSON format required by the recommendation system.
 
-def parse_medline_json(json_path):
-    dict = pp.parse_medline_xml(json_path, author_list=True)
+    Args
+    ----
+        ``xml_path``: (str) Path to the XML file retrieved after querying the eutility API.
+    
+    Returns
+    ----
+        ``json_path``: (str) Path to the JSON file containing the parsed XML response.
+
+    """
+    dict = pp.parse_medline_xml(xml_path, author_list=True)
     dict_formatted = []
 
     for item_index in range(len(dict)):
