@@ -65,7 +65,6 @@ def eutility_automator(
             "name": "",
             "number_on_paper": 1
         }],
-        "journal": "",
         "doi": "",
         "source": ""
     },

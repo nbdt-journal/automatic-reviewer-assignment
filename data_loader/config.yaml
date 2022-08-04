@@ -8,10 +8,10 @@ params:
     parse: true
   arxiv:
     start: 0
-    max_results: 1000
+    max_results: 2000
     parse: true
   medline:
-    max_results: 10
+    max_results: 100
     start: 0
     ret_start: 2
     parse: true

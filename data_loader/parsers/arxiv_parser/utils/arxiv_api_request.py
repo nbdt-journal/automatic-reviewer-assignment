@@ -71,7 +71,7 @@ def parse_response(feed: dict, all_manuscripts: list):
         if "summary" in manuscript.keys() and manuscript.get("summary") != "":
             abstract = manuscript.get("summary")
 
-        if manuscript.authors and len(manuscript.authors) > 0:
+        if manuscript.get("authors") and len(manuscript.authors) > 0:
             authors = []
             for author_index in range(len(manuscript.authors)):
                 authors.append({})

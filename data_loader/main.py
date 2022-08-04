@@ -20,20 +20,20 @@ intermediates_path = config["intermediates_path"]
 data_path = "./data/search_parameters"
 full_data = []
 
-# print("Parsing bioarxiv data...")
+print("Parsing bioarxiv data...")
 
-# biorxiv_parser(num_batches=bioarxiv_batches, all_manuscripts=full_data, page_size=bioarxiv_paging)
+biorxiv_parser(num_batches=bioarxiv_batches, all_manuscripts=full_data, page_size=bioarxiv_paging)
 
-# print("Parsing arxiv data...")
+print("Parsing arxiv data...")
 
-# print(str(len(full_data)) + " Entries have been returned.")
-# arxiv_parser(
-#     all_manuscripts=full_data,
-#     data_path=data_path,
-#     max_results=arxiv_max_results,
-#     start=arxiv_start,
-# )
-# print(str(len(full_data)) + " Entries have been returned.")
+print(str(len(full_data)) + " Entries have been returned.")
+arxiv_parser(
+    all_manuscripts=full_data,
+    data_path=data_path,
+    max_results=arxiv_max_results,
+    start=arxiv_start,
+)
+print(str(len(full_data)) + " Entries have been returned.")
 eutility_automator(
     intermediates_path=intermediates_path,
     all_abstracts=full_data,
