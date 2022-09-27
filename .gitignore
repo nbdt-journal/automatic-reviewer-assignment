@@ -190,7 +190,7 @@ dmypy.json
 cython_debug/
 
 *.xml
-*.json
+data.json
 
 
 # PyCharm
