@@ -1,17 +1,18 @@
 ---
 destination_path: './data/outputs/main_output.json'
 intermediates_path: './data/intermediates/fetch_data.xml'
+data_path: './data/search_parameters'
 params:
   bioarxiv:
-    paging: 200
-    batches: 300
+    paging: 20
+    batches: 30
     parse: true
   arxiv:
     start: 0
-    max_results: 2000
+    max_results: 20
     parse: true
   medline:
-    max_results: 1000
+    max_results: 10
     start: 0
     ret_start: 2
     parse: true

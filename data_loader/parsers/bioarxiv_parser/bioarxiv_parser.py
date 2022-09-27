@@ -116,6 +116,8 @@ def biorxiv_parser(
 
     date_range = f"{start_date}/{end_date}/"
 
+    print("Parsing data from Biorxiv...")
+
     for i in range(0, num_batches):
         cursor = str(page_size * i + 1)
         url = base_url + date_range + cursor

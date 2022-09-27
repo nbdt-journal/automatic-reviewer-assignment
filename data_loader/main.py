@@ -17,12 +17,16 @@ medline_parse = config["params"]["medline"]["parse"]
 medline_max_results = config["params"]["medline"]["max_results"]
 medline_ret_start = config["params"]["medline"]["ret_start"]
 intermediates_path = config["intermediates_path"]
-data_path = "./data/search_parameters"
+data_path = config["data_path"]
 full_data = []
 
 print("Parsing bioarxiv data...")
 
-biorxiv_parser(num_batches=bioarxiv_batches, all_manuscripts=full_data, page_size=bioarxiv_paging)
+biorxiv_parser(
+    num_batches=bioarxiv_batches,
+    all_manuscripts=full_data,
+    page_size=bioarxiv_paging
+)
 
 print("Parsing arxiv data...")
 

@@ -111,7 +111,7 @@ def eutility_automator(
         with open(intermediates_path, "w") as file:
             file.write(fetch_data)
         abstracts = parse_medline_json(intermediates_path)
-        if abstracts:
+        if abstracts:      
             all_abstracts.extend(abstracts)
         sleep(2)
         retstart = retstart + retmax
