@@ -59,7 +59,7 @@ export default function Signup() {
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
-                <label htmlFor="name" className="sr-only">
+                <label htmlFor="name">
                   Name
                 </label>
                 <input
@@ -74,6 +74,7 @@ export default function Signup() {
                   onChange={handleNameChange}
                 />
               </div>
+              <br />
               <div>
                 <label htmlFor="email" className="sr-only">
                   Email
@@ -90,8 +91,9 @@ export default function Signup() {
                   onChange={handleEmailChange}
                 />
               </div>
+              <br />
               <div>
-                <label htmlFor="username" className="sr-only">
+                <label htmlFor="username">
                   Username
                 </label>
                 <input
@@ -106,8 +108,9 @@ export default function Signup() {
                   onChange={handleUsernameChange}
                 />
               </div>
+              <br />
               <div>
-                <label htmlFor="password" className="sr-only">
+                <label htmlFor="password">
                   Password
                 </label>
                 <input
@@ -123,7 +126,6 @@ export default function Signup() {
                 />
               </div>
             </div>
-
             <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <input
