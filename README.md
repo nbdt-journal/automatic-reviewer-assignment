@@ -2,41 +2,41 @@
 
 ML Model to assign reviewers to your paper automatically!
 
-## Backend:
+## Backend
 
-### Setup:
+### Setup
 
-    Preferably use a virtual environment
-    This can be done through venv or miniconda
+Preferably use a virtual environment, which can be done through venv or miniconda. Following this, install the requirements. Two samples are shown below and can be followed.
 
-    Install miniconda and install depedencies from the requirements.txt using the following scripts:
-    conda create -n <env_name> python=3.10
+    By venv:
+    python3 -m venv venv
+    source venv/bin/activate
+
+    By conda:
+    conda create -n <env_name> python=3.10 # specify environment name and python version
     conda activate <env_name>
     pip install -r requirements.txt
 
-    Some users might face a problem with the installation of the requirements (especially psycopg-2). Users can then refer to this [link](
-    https://stackoverflow.com/questions/73088528/installing-pycopg2-gave-me-an-issue-in-ubuntu-22-4-pip3-version-22-2) to solve the problem.
-
+Some users might face a problem with the installation of the requirements (especially psycopg-2). Please refer to this [issue](https://stackoverflow.com/questions/73088528/installing-pycopg2-gave-me-an-issue-in-ubuntu-22-4-pip3-version-22-2) to solve the problem.
+    
 ### For the Postgres Database:
 
-    Install Postgres on your system, follow the instructions [here](https://www.postgresql.org/download/).
+Install Postgres on your system, follow the instructions [here](https://www.postgresql.org/download/).
 
-    Create a user named 'postgres' with password 'postgres' in the postgres terminal. In Ubuntu, this terminal can be accessed by typing 'sudo -su postgres psql' in the terminal.
+Create a user named `postgres` with password `postgres` in the postgres terminal. In Ubuntu, this terminal can be accessed by typing `sudo -su postgres psql` in the terminal.
 
-    Create a database named 'nfp' in postgres.
+Create a database named `nfp` in postgres.
 
-    Make a copy of the .env.example file and rename it to .env.
+Make a copy of the .env.example file and rename it to .env.
 
-    If there is PG Admin installed in the system, it will be easy to administer and monitor the data using the platform.
+If there is PG Admin installed in the system, it will be easy to administer and monitor the data using the platform.
 
-Run the development server:
+### Run the development server:
 
     uvicorn main:app --reload to run the website
 
- 
+    
 ## Frontend:
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Getting Started
 
@@ -54,11 +54,12 @@ We start with the `pages/index.js`. The page auto-updates as you edit the file.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-### Learn More
+We use [Tailwind CSS](https://tailwindcss.com/) for styling. The `styles` directory contains the global styles and the `tailwind.config.js` file contains the configuration for Tailwind CSS.
 
-To learn more about Next.js, take a look at the following resources:
+### Workflow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The workflow for the user interface can be understood as:
+- The user enters the website and is greeted with the home page.
+- The user can then log into their account or create a new account.
+- The user can then upload a paper (pdf) or enter the text of the abstract after which the user can search for authors, journals or articles related to the particulr abstract.
+- The user can then view the results of the search and select the authors, journals or articles that they want 
