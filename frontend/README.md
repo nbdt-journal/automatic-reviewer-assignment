@@ -1,3 +1,5 @@
+# Frontend
+
 ## Getting Started
 
 First, run the development server:
@@ -15,6 +17,8 @@ We start with the `pages/index.js`. The page auto-updates as you edit the file.
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 We use [Tailwind CSS](https://tailwindcss.com/) for styling. The `styles` directory contains the global styles and the `tailwind.config.js` file contains the configuration for Tailwind CSS.
+
+## Workflow
 
 The workflow for the user interface can be understood as:
 - The user enters the website and is greeted with the home page.

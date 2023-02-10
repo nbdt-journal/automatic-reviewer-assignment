@@ -6,12 +6,12 @@ ML Model to assign reviewers to your paper automatically!
 
 ### Setup:
 
-    Preferably use a virtual environment, which can be done through venv or miniconda. 
-    Install the requirements:
+    Preferably use a virtual environment, which can be done through venv or miniconda. Following this, install the requirements.
 
     By venv:
     python3 -m venv venv
     source venv/bin/activate
+    pip install -r requirements.txt
 
     By conda:
     conda create -n <env_name> python=3.10 # specify environment name and python version
