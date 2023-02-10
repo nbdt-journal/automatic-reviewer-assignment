@@ -9,15 +9,9 @@ ML Model to assign reviewers to your paper automatically!
     Preferably use a virtual environment
     This can be done through venv or miniconda
 
-    By venv:
-    python3 -m venv venv
-    source venv/bin/activate
-
-    By conda:
+    Install miniconda and install depedencies from the requirements.txt using the following scripts:
     conda create -n <env_name> python=3.10
     conda activate <env_name>
-
-    Install the requirements:
     pip install -r requirements.txt
 
     Some users might face a problem with the installation of the requirements (especially psycopg-2). Users can then refer to this [link](

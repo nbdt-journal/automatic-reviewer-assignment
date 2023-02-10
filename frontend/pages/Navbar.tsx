@@ -83,6 +83,15 @@ export default function Navbar() {
 										</Link>
 									</li>
 								)}
+								{
+									token && (
+										<li className="text-white">
+											<Link href="/dashboard">
+												<a>Dashboard</a>
+											</Link>
+										</li>
+									)
+								}
 								{token &&
 									<li className="text-white">
 										<Link href="/">

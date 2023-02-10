@@ -1,4 +1,3 @@
-import Header from './Header'
 import styles from '../styles/Home.module.css'
 import { useEffect } from 'react';
 import { useState } from 'react';

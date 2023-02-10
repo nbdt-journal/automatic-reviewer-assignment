@@ -33,4 +33,6 @@ For the Postgres Database:
 
 Run the development server:
 
-    uvicorn main:app --reload
+    uvicorn main:app --reload to run the website
+
+    

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Dashboard from './dashboard';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -27,9 +28,10 @@ export default function Login() {
     if (res.status == 200) {
       const json = await res.json();
       localStorage.setItem('token', json.access_token);
-      router.push("admin");
+      router.push("dashboard");
     } else {
       alert('Login failed.')
+      router.push("login");
     }
   }
 
