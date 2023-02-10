@@ -14,9 +14,9 @@ Setup:
     conda activate <env_name>
     pip install -r requirements.txt
 
-    Some users might face a problem with the installation of the requirements (especially psycopg-2). Please refer to this [issue](
-    https://stackoverflow.com/questions/73088528/installing-pycopg2-gave-me-an-issue-in-ubuntu-22-4-pip3-version-22-2) to solve the problem.
-
+    Some users might face a problem with the installation of the requirements (especially psycopg-2). Please refer to this 
+    [issue](https://stackoverflow.com/questions/73088528/installing-pycopg2-gave-me-an-issue-in-ubuntu-22-4-pip3-version-22-2) to solve the problem.
+    
 ## For the Postgres Database:
 
     Install Postgres on your system, follow the instructions [here](https://www.postgresql.org/download/).
