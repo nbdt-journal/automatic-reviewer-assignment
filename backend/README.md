@@ -1,6 +1,6 @@
 # Backend
 
-## Setup:
+Setup:
 
     Preferably use a virtual environment, which can be done through venv or miniconda. 
     Install the requirements:
