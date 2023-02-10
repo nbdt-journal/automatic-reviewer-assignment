@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -16,11 +14,10 @@ We start with the `pages/index.js`. The page auto-updates as you edit the file.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+We use [Tailwind CSS](https://tailwindcss.com/) for styling. The `styles` directory contains the global styles and the `tailwind.config.js` file contains the configuration for Tailwind CSS.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The workflow for the user interface can be understood as:
+- The user enters the website and is greeted with the home page.
+- The user can then log into their account or create a new account.
+- The user can then upload a paper (pdf) or enter the text of the abstract after which the user can search for authors, journals or articles related to the particulr abstract.
+- The user can then view the results of the search and select the authors, journals or articles that they want 
