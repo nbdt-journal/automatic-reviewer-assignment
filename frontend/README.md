@@ -1,28 +1,26 @@
-# Website Module
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This module of the repository consists of the code for the frontend of the website. The website has been built using NextJS in TypeScript. 
+## Getting Started
 
-## Setup
+First, run the development server:
 
-1. Install NextJS from [here](https://nextjs.org/docs).
-2. Install TypeScript from [here](https://www.typescriptlang.org/download).
-3. Install the Node Modules using the following commands in the current directory:
-   ``` 
-   npm i
-    or
-   yarn
-   ```
-## Running the Application
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-1. Run the following command in the current directory to start the development server:
-   ```
-   npm run dev
-    or
-   yarn dev
-   ```
-2. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Contributing Guidelines
+We start with the `pages/index.js`. The page auto-updates as you edit the file.
 
-The style guide followed in the repository, is that of [Google’s](https://google.github.io/styleguide/tsguide.html). Contributors can make a pull requests to add features/submit bug reports.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
