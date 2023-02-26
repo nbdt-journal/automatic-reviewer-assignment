@@ -6,7 +6,7 @@ ML Model to assign reviewers to your paper automatically!
 
 ### Setup
 
-Preferably use a virtual environment, which can be done through venv or miniconda. Following this, install the requirements. Two samples are shown below and can be followed.
+It is recommended to use a virtual environment to set up the project. You can use either venv or miniconda to create the virtual environment. Once the virtual environment is created, install the requirements using the following commands:
 
     By venv:
     python3 -m venv venv
@@ -61,5 +61,5 @@ We use [Tailwind CSS](https://tailwindcss.com/) for styling. The `styles` direct
 The workflow for the user interface can be understood as:
 - The user enters the website and is greeted with the home page.
 - The user can then log into their account or create a new account.
-- The user can then upload a paper (pdf) or enter the text of the abstract after which the user can search for authors, journals or articles related to the particulr abstract.
-- The user can then view the results of the search and select the authors, journals or articles that they want 
+- The user can then upload a paper (pdf) or enter the text of the abstract after which the user can search for authors, journals or articles related to the particular abstract.
+- The user can then view the results of the search and select the authors, journals or articles that they want.
