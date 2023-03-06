@@ -75,11 +75,13 @@ export default function Dashboard() {
             }
           }
           onClick={() => {
-            alert("Your abstract has been submitted!");
             // Redirect to author page
             router.push({
               pathname: '/author',
+              query: { abstract },
             });
+
+            alert({ abstract });
           }}
         >
           Find Authors
@@ -99,11 +101,13 @@ export default function Dashboard() {
             }
           }
           onClick={() => {
-            alert("Your abstract has been submitted!");
             // Redirect to author page
             router.push({
               pathname: '/author',
+              query: { abstract },
             });
+
+            alert({ abstract });
           }}
         >
           Find Articles
@@ -123,11 +127,13 @@ export default function Dashboard() {
             }
           }
           onClick={() => {
-            alert("Your abstract has been submitted!");
             // Redirect to author page
             router.push({
               pathname: '/author',
+              query: { abstract },
             });
+
+            alert({ abstract });
           }}
         >
           Find Journals

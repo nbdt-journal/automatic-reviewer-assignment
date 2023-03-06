@@ -2,21 +2,19 @@
 
 Setup:
 
-    Preferably use a virtual environment
-    This can be done through venv or miniconda
+    Preferably use a virtual environment, which can be done through venv or miniconda. Following this, install the requirements.
 
     By venv:
     python3 -m venv venv
     source venv/bin/activate
-
-    By conda:
-    conda create -n <env_name> python=3.10
-    conda activate <env_name>
-
-    Install the requirements:
     pip install -r requirements.txt
 
-    Some users might face a problem with the installation of the requirements (especially psycopg-2). Users can then refer to this [link](
+    By conda:
+    conda create -n <env_name> python=3.10 # specify environment name and python version
+    conda activate <env_name>
+    pip install -r requirements.txt
+
+    Some users might face a problem with the installation of the requirements (especially psycopg-2). Please refer to this [issue](
     https://stackoverflow.com/questions/73088528/installing-pycopg2-gave-me-an-issue-in-ubuntu-22-4-pip3-version-22-2) to solve the problem.
 
 For the Postgres Database:

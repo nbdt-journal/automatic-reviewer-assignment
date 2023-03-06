@@ -5,14 +5,12 @@ import Navbar from './Navbar';
 export default function Author() {
   const [user, setUser] = useState(null);
   const router = useRouter();
+  
+  const { query } = router
 
-  const {
-    query: { abstract },
-  } = router;
+  var abstract = query.abstract
 
-  const props = {
-    abstract: abstract
-  }
+  console.log(abstract)
 
   const authors = [
     {
@@ -82,12 +80,14 @@ export default function Author() {
           }
         }>
           <p>
-            Based on your abstract/title that you have submitted, <br /> 
-            <i>{props.abstract}</i> <br />
+            Based on your abstract/title that you have submitted, <br /> <br />
+
+            <i>{abstract}</i> <br /> <br />
+
             Here are some authors that you
             might be interested in:
           </p>
-          <div>
+          {/* <div>
           {authors.map((author) => {
             return (
               <div>
@@ -97,7 +97,7 @@ export default function Author() {
             )
           })}
             
-          </div>
+          </div> */}
         </div>
 
         {/* {user && (
