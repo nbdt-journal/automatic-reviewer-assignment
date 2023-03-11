@@ -79,6 +79,7 @@ export default function Dashboard() {
             // Redirect to author page
             router.push({
               pathname: '/author',
+              query: { abstract: abstract },
             });
           }}
         >
