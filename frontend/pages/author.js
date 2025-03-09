@@ -90,7 +90,7 @@ export default function Author() {
           <div>
           {authors.map((author) => {
             return (
-              <div>
+              <div style={authorstyles}>
                 <p>{author.name}</p>
                 <p>{author.email}</p>
               </div>
@@ -107,4 +107,19 @@ export default function Author() {
       </div>
     </div>
   )
+}
+
+
+// author styles should have one div for each author, with data at either ends of the row div
+const authorstyles = {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  alignItems: "center",
+  width: "100%",
+  padding: "1%",
+  border: "1px solid black",
+  borderRadius: "5px",
+  marginTop: "1%",
+  marginBottom: "1%",
 }
